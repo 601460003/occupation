@@ -1,0 +1,12 @@
+超出换行 显示省略号
+<nobr>
+ overflow: hidden;
+text-overflow: ellipsis
+word-break:break-all
+<nobr/>
+
+在项目中，我们会用锚点来实现同一页面不同模块的跳转，如果只是加锚点，动画会有点生硬，加一句简单的JS可以使锚点的跳转加上滚动效果
+let anchorElement = document.getElementById(activeTab.anchorName);
+      if (anchorElement) {
+        anchorElement.scrollIntoView({ behavior: 'smooth' });
+      }
